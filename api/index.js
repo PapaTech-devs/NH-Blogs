@@ -5,7 +5,7 @@ const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
 const app = express();
 
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect(
   "mongodb+srv://nearhouseblogs:tirtha2000@cluster0.dfz9nj5.mongodb.net/?retryWrites=true&w=majority",
