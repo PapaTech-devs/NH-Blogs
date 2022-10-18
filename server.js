@@ -5,6 +5,8 @@ const articleRouter = require("./routes/articles");
 const methodOverride = require("method-override");
 const app = express();
 
+const PORT = 5000 || process.env.PORT;
+
 mongoose.connect(
   "mongodb+srv://nearhouseblogs:tirtha2000@cluster0.dfz9nj5.mongodb.net/?retryWrites=true&w=majority",
   {
@@ -25,4 +27,4 @@ app.get("/", async (req, res) => {
 
 app.use("/articles", articleRouter);
 
-app.listen(5000, console.log("server running"));
+app.listen(PORT, console.log("server running"));
