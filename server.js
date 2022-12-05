@@ -8,7 +8,7 @@ const app = express();
 const PORT = 5000 || process.env.PORT;
 
 mongoose.connect(
-  "mongodb+srv://nearhouseblogs:tirtha2000@cluster0.dfz9nj5.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://PapaTech:Techerbaba@cluster0.g4us8yt.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
